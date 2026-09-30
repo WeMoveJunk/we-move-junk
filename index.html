@@ -255,5 +255,225 @@
     © 2026 We Move Junk
 </footer>
 
+<!-- QUOTE REQUEST SECTION -->
+<section class="quote-section">
+    <div class="quote-container">
+        <div class="quote-header">
+            <p class="quote-label">FREE QUOTE</p>
+            <h2>Get Your Junk Gone.</h2>
+            <p>
+                Tell us what you need removed and we'll review your request.
+                You'll receive a quote within <strong>24–48 hours.</strong>
+            </p>
+        </div>
+
+        <form class="quote-form">
+
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+            </div>
+
+            <!-- Phone / Email -->
+            <div class="form-group">
+                <label for="contact">Phone or Email</label>
+                <input
+                    type="text"
+                    id="contact"
+                    name="contact"
+                    placeholder="Phone number or email"
+                    required
+                >
+            </div>
+
+            <!-- What needs removed -->
+            <div class="form-group">
+                <label for="items">What do you need removed?</label>
+                <textarea
+                    id="items"
+                    name="items"
+                    rows="4"
+                    placeholder="Example: Old couch, mattress, boxes, garage clutter..."
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Pickup location -->
+            <div class="form-group">
+                <label for="location">Pickup Location</label>
+                <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="City / ZIP code"
+                    required
+                >
+            </div>
+
+            <!-- Photos -->
+            <div class="form-group">
+                <label for="photos">Photos <span>(Optional)</span></label>
+                <input
+                    type="file"
+                    id="photos"
+                    name="photos"
+                    accept="image/*"
+                    multiple
+                >
+                <small>Adding photos can help us provide a more accurate quote.</small>
+            </div>
+
+            <button type="submit" class="quote-button">
+                Request My Free Quote →
+            </button>
+
+            <p class="quote-response">
+                We'll review your request and get back to you within 24–48 hours.
+            </p>
+
+        </form>
+    </div>
+</section>
+
+<style>
+    .quote-section {
+        padding: 80px 20px;
+        background: #0a0a0a;
+    }
+
+    .quote-container {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 45px;
+        background: #111;
+        border: 1px solid #39FF14;
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .quote-header {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .quote-label {
+        color: #39FF14;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    .quote-header h2 {
+        color: white;
+        font-size: 42px;
+        margin: 0 0 15px;
+    }
+
+    .quote-header p {
+        color: #bdbdbd;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .quote-header strong {
+        color: #39FF14;
+    }
+
+    .quote-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-group label {
+        color: white;
+        font-weight: 600;
+    }
+
+    .form-group label span {
+        color: #888;
+        font-weight: normal;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #333;
+        border-radius: 12px;
+        background: #1a1a1a;
+        color: white;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: #39FF14;
+        box-shadow: 0 0 0 3px rgba(57, 255, 20, 0.12);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+    .form-group input[type="file"] {
+        padding: 12px;
+    }
+
+    .form-group small {
+        color: #888;
+    }
+
+    .quote-button {
+        margin-top: 10px;
+        padding: 17px 25px;
+        border: none;
+        border-radius: 12px;
+        background: #39FF14;
+        color: #000;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .quote-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(57, 255, 20, 0.25);
+    }
+
+    .quote-response {
+        margin: 0;
+        text-align: center;
+        color: #888;
+        font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+        .quote-container {
+            padding: 30px 20px;
+        }
+
+        .quote-header h2 {
+            font-size: 32px;
+        }
+    }
+</style>
+    
 </body>
 </html>
